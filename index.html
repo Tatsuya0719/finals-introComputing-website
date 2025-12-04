@@ -3,28 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample HTML Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Online Portfolio</title>
+    <link rel="https://fonts.googleapis.com/css?family=Space+Mono|Open+Sans" href="styles.css">
+    <head>
+<style>
+    
+body {
+    font-family: 'Space Mono', monospace;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 98vh;
+}
+
+.container .left {
+    display: grid;
+    background-color: #ffffff;
+    align-items: center;
+    text-align: center;
+    grid-template-rows: 50%;
+}
+
+.container .right {
+    display: grid;
+    background-color: #cfcfcf;
+    padding: 20%;
+    grid-template-rows: 70% 30%;
+    align-items: center;
+    text-align: center;
+}
+
+.container .right .navbar {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+.email button, .navbar button {
+    background-color: black;
+    letter-spacing: 1px;
+    width: 200px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to My Sample Page</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About This Page</h2>
-            <p>This is a simple HTML page to demonstrate the structure of an HTML document.</p>
-        </section>
-        <section>
-            <h2>Features</h2>
-            <ul>
-                <li>Header Section</li>
-                <li>Main Content Area</li>
-                <li>Footer Section</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Sample Page. All rights reserved.</p>
-    </footer>
+
+<div class="container">
+
+    <div class="left">
+        <div class="image" style="padding-top: 10%;">
+            <img src="https://i.redd.it/ive-rei-announced-as-new-muse-of-fashion-brand-opening-v0-r7pt7x2rnmmd1.jpg?width=1440&format=pjpg&auto=webp&s=4345753ad31befb554937252f115c2c19ba69ecd" width="35%" height="35%"></img>
+        </div>
+        <div class="name">
+            <h2 style="font-size: 30px;">&lt;LAURENCE KOBE CATUIRAN&gt;</h2>
+            <h3 style="font-size: 25px; font-family: Open Sans, sans-serif; letter-spacing: 1px;">Computer Science Student</h3>
+        </div>
+        <div class="email">
+            <button>Email Me</button>
+        </div>
+        <div class="contacts"></div>
+    </div>
+
+    <div class="right">
+        <div class="mission">
+            <h1 style="font-size: 50px; letter-spacing: 8px;">&lt;/Mission&gt;</h1>
+            <p style="font-family: Open Sans, sans-serif; padding-top: 5%; font-size: 20px; letter-spacing: 1px;">To have a deep understanding of the programming world, and to contribute to its betterment. By providing my acquired knowledge and skills throughout my studies to the next generation of learners</p>
+        </div>
+        <div class="navbar">
+            <div style="display: grid; grid-template-columns: 33% 33% 33%; column-gap: 10px;">
+                <div><button>About Me</button></div>
+                <div><button>Portfolio</button></div>
+                <div><button>Contact</button></div>
+            </div>
+            <div style="display: grid; grid-template-columns: auto auto; justify-content: center; column-gap: 10px;">
+                <div><button>Experience</button></div>
+                <div><button>Services</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
 </html>
