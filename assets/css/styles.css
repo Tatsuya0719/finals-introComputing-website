@@ -1,6 +1,5 @@
 body {
     font-family: 'Space Mono', monospace;
-    background-color: black;
 }
 
 .container {
@@ -32,7 +31,7 @@ body {
     justify-content: center;
 }
 
-.email button, .navbar button {
+.email button, .navbar button, .aboutMe-Container .left button {
     background-color: black;
     letter-spacing: 1px;
     width: 200px;
@@ -43,4 +42,29 @@ body {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+}
+
+.aboutMe-Container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 98vh;
+}
+
+.aboutMe-Container .left {
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+.aboutMe-Container .right {
+    display: grid;
+    background-color: black;
+    color: white;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    border: 10px solid white;
+}
+
+.aboutMe-Container .right div {
+    border: 5px solid white;
+    padding: 10%;
 }
