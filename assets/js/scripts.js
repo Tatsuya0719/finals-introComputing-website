@@ -25,3 +25,10 @@ if (servicesButton) {
     location.assign('services.html');
   }
 }
+
+var experienceButton = document.getElementById('experience-button');
+if (experienceButton) {
+  experienceButton.onclick = function() {
+    location.assign('experience.html');
+  }
+}
