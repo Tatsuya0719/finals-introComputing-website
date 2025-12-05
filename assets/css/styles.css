@@ -53,12 +53,14 @@ body {
 .aboutMe-Container .left {
     display: grid;
     grid-template-rows: 80% 20%;
+    border-top: 15px solid white;
+    border-left: 10px solid white;
 }
 
 .aboutMe-Container .right {
     display: grid;
-    background-color: black;
-    color: white;
+    background-color: #cfcfcf;
+    color: rgb(0, 0, 0);
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     border: 10px solid white;
@@ -67,4 +69,16 @@ body {
 .aboutMe-Container .right div {
     border: 5px solid white;
     padding: 10%;
+}
+
+.aboutMe-Container .right div h1 {
+    justify-self: center;
+    letter-spacing: 5px;
+}
+
+.aboutMe-Container .right div ul {
+    justify-self: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
