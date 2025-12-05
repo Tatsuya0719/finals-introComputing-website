@@ -43,5 +43,22 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal Structure -->
+        <div id="emailModal" class="modal" style="display:none;">
+          <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Send Me an Email</h2>
+            <form>
+              <label for="name">Your Name:</label><br>
+              <input type="text" id="name" name="name" required><br><br>
+              <label for="email">Your Email:</label><br>
+              <input type="email" id="email" name="email" required><br><br>
+              <label for="message">Message:</label><br>
+              <textarea id="message" name="message" rows="4" required></textarea><br><br>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
     </body>
 </html>

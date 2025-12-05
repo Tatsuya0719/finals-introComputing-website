@@ -32,3 +32,24 @@ if (experienceButton) {
     location.assign('experience.html');
   }
 }
+
+// Modal functionality for "Email Me" button
+document.addEventListener('DOMContentLoaded', function() {
+  var emailBtn = document.querySelector('.email button');
+  var modal = document.getElementById('emailModal');
+  var closeBtn = document.getElementById('closeModal');
+
+  if (emailBtn && modal && closeBtn) {
+    emailBtn.onclick = function() {
+      modal.style.display = 'flex';
+    };
+    closeBtn.onclick = function() {
+      modal.style.display = 'none';
+    };
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    };
+  }
+});
