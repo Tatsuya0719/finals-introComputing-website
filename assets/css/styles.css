@@ -31,7 +31,7 @@ body {
     justify-content: center;
 }
 
-.email button, .navbar button, .aboutMe-Container .left button {
+.email button, .navbar button, .aboutMe-Container .left button, .portfolio-Container .down button {
     background-color: black;
     letter-spacing: 1px;
     width: 200px;
@@ -81,4 +81,39 @@ body {
     line-height: 40px;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
+}
+
+.portfolio-Container {
+    display: grid;
+    grid-template-rows: 80vh 18vh;
+}
+
+.portfolio-Container .up {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: black;
+    color: white;
+
+    
+}
+.portfolio-Container .up div {
+    border: 50px solid white;
+    text-align: center;
+    align-content: center;
+}
+
+.portfolio-Container .up div ul {
+    /* list-style-type: none; */
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.portfolio-Container .down {
+    display: grid;
+    background-color: #cfcfcf;
+    grid-template-columns: 80% 20%;
 }

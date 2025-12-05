@@ -11,3 +11,10 @@ if (aboutMeButton) {
     location.assign('about.html');
   }
 }
+
+var portfolioButton = document.getElementById('portfolio-button');
+if (portfolioButton) {
+  portfolioButton.onclick = function() {
+    location.assign('portfolio.html');
+  }
+}
