@@ -18,3 +18,10 @@ if (portfolioButton) {
     location.assign('portfolio.html');
   }
 }
+
+var servicesButton = document.getElementById('services-button');
+if (servicesButton) {
+  servicesButton.onclick = function() {
+    location.assign('services.html');
+  }
+}
